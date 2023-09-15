@@ -8,7 +8,7 @@ function subtract(operand1, operand2){
 }
 
 function multiply(operand1, operand2){
-    return((operand1 * operand2).toFixed(2));
+    return(operand1 * operand2);
 }
 
 function divide(operand1, operand2){
@@ -17,7 +17,7 @@ function divide(operand1, operand2){
         return(0);
     }
     else{
-        return((operand1 / operand2).toFixed(2));
+        return(operand1 / operand2);
     }
 }
 
@@ -66,23 +66,12 @@ const equals_button = document.querySelector('#equal');
 equals_button.addEventListener('click',() => {
     let input_array = displayValue.textContent.split(/([+*\-/])/);
     while(input_array.length >=3){
-    console.log(input_array);
     let operand1 = parseFloat(input_array.shift());
     let operation = input_array.shift();
     let operand2 = parseFloat(input_array.shift());
-    console.log(input_array)
     let temp_answer = operate(operand1,operation,operand2)
     clear();
     input_array.unshift(temp_answer);
-    updateDisplay(temp_answer);
+    updateDisplay(temp_answer.toFixed(3));
 }   
 });
-
-
-//let operand1 = parseFloat(input_array.shift());
-    //let operation = input_array.shift();
-    //let operand2 = parseFloat(input_array.shift());
-    //console.log(input_array)
-    //clear();
-    //let answer = operate(operand1,operation,operand2)
-    //updateDisplay(answer);
