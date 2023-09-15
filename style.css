@@ -61,3 +61,7 @@ button{
     background-color: #03DAC6;
     color: #000000;
 }
+
+.key.operation{
+    background-color: #5e43f3;
+}
