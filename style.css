@@ -27,7 +27,7 @@ button{
     margin: 16px;
 }
 
-#result{
+.result{
     color:#FFFFFF;
     background-color: #1F1A24;
     border-radius: 8px;
@@ -38,6 +38,7 @@ button{
     justify-content: flex-end;
     align-items: center;
     margin-left: 8px;
+    overflow: auto;
 }
 
 .key-pad{

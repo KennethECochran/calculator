@@ -48,7 +48,7 @@ function clear(){
     displayValue.textContent = '';
 }
 
-const displayValue = document.querySelector('#result');
+const displayValue = document.querySelector('.result');
 
 const buttons = document.querySelectorAll('.key');
 buttons.forEach((button) => {
