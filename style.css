@@ -7,6 +7,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 button{
@@ -27,17 +28,23 @@ button{
     margin: 16px;
 }
 
-.result{
+
+.resultcontainer{
     color:#FFFFFF;
     background-color: #1F1A24;
     border-radius: 8px;
-    width: 400px;
+    width: 364px;
     height: 100px;
-    font-size: 60px;
+    font-size: 48px;
     display: flex;
-    justify-content: flex-end;
+    min-width: 0px;
     align-items: center;
+    justify-content: flex-end;
     margin-left: 8px;
+
+}
+
+.result{
     overflow: auto;
 }
 
